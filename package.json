@@ -1,0 +1,31 @@
+{
+	"type": "module",
+	"name": "kanbas-node-server-app",
+	"version": "1.0.0",
+	"description": "HTTP web server for Kanbas Application",
+	"main": "index.js",
+	"scripts": {
+		"start": "node app.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/gsakshay/kanbas-node-server-app.git"
+	},
+	"keywords": [
+		"Node",
+		"REST",
+		"server",
+		"HTTP"
+	],
+	"author": "Akshay Gunjur Surya Prakash",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/gsakshay/kanbas-node-server-app/issues"
+	},
+	"homepage": "https://github.com/gsakshay/kanbas-node-server-app#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.18.2"
+	}
+}
