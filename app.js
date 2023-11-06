@@ -6,6 +6,8 @@ import cors from "cors"
 import Hello from "./hello.js"
 import Lab5 from "./lab5.js"
 
+import CourseRoutes from "./courses/routes.js"
+
 const app = express()
 // Middlewear to allow cross-origin sharing
 app.use(cors())
@@ -16,5 +18,6 @@ const PORT = 4000
 
 Hello(app)
 Lab5(app)
+CourseRoutes(app)
 
 app.listen(PORT, () => console.log(`App is up and running on port ${PORT}`))
