@@ -13,12 +13,14 @@ import ModuleRoutes from "./modules/routes.js"
 
 const app = express()
 // Middlewear to allow cross-origin sharing
-app.use(
-	cors({
-		credentials: true,
-		origin: process.env.FRONTEND_URL,
-	})
-)
+// const whiteList = [process.env.FRONTEND_URL, "http://localhost:3000/*"]
+// app.use(
+// 	cors({
+// 		credentials: true,
+// 		origin: whiteList,
+// 	})
+// )
+app.use(cors())
 // Passing JSON data to the server in an HTTP Body
 app.use(express.json())
 
